@@ -1,6 +1,7 @@
 import React from 'react';
 import Ball from './Component/Ball';
 import Bat from './Component/Bat';
+import User from './Component/User';
 import { Provider } from "react-redux";
 import store from './store';
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <Ball></Ball>
         <Bat></Bat>
+        <User></User>
       </div>
     </Provider>
   );
