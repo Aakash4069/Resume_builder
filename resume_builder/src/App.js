@@ -12,6 +12,8 @@ function App() {
         <Ball></Ball>
         <Bat></Bat>
         <User></User>
+
+        
       </div>
     </Provider>
   );
