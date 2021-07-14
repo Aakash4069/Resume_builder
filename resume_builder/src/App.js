@@ -1,10 +1,15 @@
+import { Router } from '@material-ui/icons';
 import React from 'react';
+import {  Route } from 'react-router-dom'
+// import Routing from "./Routing"
+import Ecommerce from "./cartPOC/Ecommerce"
+import EcommerceStore from "./cartPOC/app/store";
+
 // import Ball from './Component/Ball';
 // import Bat from './Component/Bat';
 // import User from './Component/User';
-// import { Provider } from "react-redux";
+import { Provider } from "react-redux";
 // import store from './store';
-import Ecommerce from "./Ecommerce"
 function App() {
   return (
     // 4
@@ -15,7 +20,11 @@ function App() {
     //     <User></User>
     //   </div>
     // </Provider>
-    <Ecommerce></Ecommerce>
+    <Provider store={EcommerceStore}>
+      <Ecommerce>
+
+      </Ecommerce>
+    </Provider>
   );
 }
 export default App;
